@@ -25,15 +25,8 @@
 }
 
 body {
-  /*
-  background-image: url(./assets/assets/bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  */
-
-  /*background: color image repeat position/size; */
   background: var(--bg-color) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -162,4 +155,14 @@ footer {
   padding: 24px 0;
   text-align: center;
   text-decoration: none;
+}
+
+/* media queries */
+@media (min-width: 700px){
+  :root{
+    --bg-color: url(./assets/assets/inazuma-desktop.jpg);
+  }
+  .light{
+    --bg-color: url(./assets/assets/inazuma-day-desktop.jpg);
+  }
 }
